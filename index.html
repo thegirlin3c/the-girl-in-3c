@@ -1,0 +1,277 @@
+---
+layout: default
+title: "Home"
+---
+
+<!-- =========================================================
+     THE GIRL IN 3C — HOMEPAGE
+     
+     This file controls the CONTENT of the homepage.
+     The overall styling is in:
+     /assets/css/style.css
+     
+     The header/footer are in:
+     /_layouts/default.html
+     ========================================================= -->
+
+
+<!-- =========================================================
+     HERO SECTION
+     
+     This is the first thing visitors see.
+     ========================================================= -->
+
+<section class="hero">
+
+  <div class="hero-copy">
+
+    <p class="eyebrow">
+      FIELD NOTES FROM NEW YORK
+    </p>
+
+    <h1>
+      She lives in New York.<br>
+      <em>That's all you're getting.</em>
+    </h1>
+
+    <p class="hero-subtitle">
+      Dating, disasters, ambition, friendship, and the strange little
+      things that happen when you're trying to become someone in a city
+      full of people doing exactly the same thing.
+    </p>
+
+    <div class="hero-actions">
+
+      <a
+        class="button button-dark"
+        href="{{ '/stories/' | relative_url }}"
+      >
+        Read the stories
+      </a>
+
+      <a
+        class="text-link"
+        href="#dispatch"
+      >
+        Get the dispatch →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- =======================================================
+       HERO IMAGE
+       
+       THIS IS TEMPORARY.
+       
+       Later we'll replace this with the actual beautiful
+       3C / NYC imagery.
+       ======================================================= -->
+
+  <div class="hero-image-wrap">
+
+    <div class="hero-image-placeholder">
+
+      <span>3C</span>
+
+      <small>
+        somewhere in New York
+      </small>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     LATEST STORY
+     
+     This section automatically grabs your newest article.
+     
+     You do NOT have to manually change the homepage every
+     time you publish something.
+     ========================================================= -->
+
+<section class="section section-border">
+
+  <div class="section-heading">
+
+    <p class="eyebrow">
+      THE LATEST
+    </p>
+
+    <a href="{{ '/stories/' | relative_url }}">
+      View all →
+    </a>
+
+  </div>
+
+
+  <div class="featured-grid">
+
+    {% assign latest = site.posts | first %}
+
+    {% if latest %}
+
+      <article class="featured-story">
+
+        <p class="story-category">
+          {{ latest.categories | first }}
+        </p>
+
+        <h2>
+          <a href="{{ latest.url | relative_url }}">
+            {{ latest.title }}
+          </a>
+        </h2>
+
+        <p class="story-deck">
+          {{ latest.excerpt | strip_html | truncate: 180 }}
+        </p>
+
+        <a
+          class="text-link"
+          href="{{ latest.url | relative_url }}"
+        >
+          Read the story →
+        </a>
+
+      </article>
+
+    {% else %}
+
+      <!-- This only appears if there are no articles yet. -->
+
+      <article class="featured-story">
+
+        <p class="story-category">
+          COMING SOON
+        </p>
+
+        <h2>
+          The first story is being written.
+        </h2>
+
+        <p class="story-deck">
+          This space will automatically feature your newest article.
+        </p>
+
+      </article>
+
+    {% endif %}
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MORE STORIES
+     
+     This automatically displays your six newest articles.
+     
+     Again: when you add an article, you don't need to edit
+     this section.
+     ========================================================= -->
+
+<section class="section">
+
+  <div class="section-heading">
+
+    <p class="eyebrow">
+      MORE FROM 3C
+    </p>
+
+  </div>
+
+
+  <div class="story-grid">
+
+    {% for post in site.posts limit:6 %}
+
+      <article class="story-card">
+
+        <div class="story-card-top">
+
+          <p class="story-category">
+            {{ post.categories | first }}
+          </p>
+
+          <p class="story-date">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </p>
+
+        </div>
+
+
+        <h3>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+
+
+        <p>
+          {{ post.excerpt | strip_html | truncate: 120 }}
+        </p>
+
+
+        <a
+          class="text-link"
+          href="{{ post.url | relative_url }}"
+        >
+          Read →
+        </a>
+
+      </article>
+
+    {% endfor %}
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EMAIL / DISPATCH SECTION
+     
+     THIS IS CURRENTLY A PLACEHOLDER.
+     
+     Later we'll connect this to your actual email platform.
+     ========================================================= -->
+
+<section id="dispatch" class="dispatch">
+
+  <div>
+
+    <p class="eyebrow">
+      THE DISPATCH
+    </p>
+
+    <h2>
+      Get the next story before everyone else.
+    </h2>
+
+    <p>
+      New York, dating, ambition, beautiful mistakes and everything
+      in between. Delivered occasionally.
+    </p>
+
+  </div>
+
+
+  <a
+    class="button button-light"
+    href="{{ '/subscribe/' | relative_url }}"
+  >
+    Subscribe
+  </a>
+
+</section>
