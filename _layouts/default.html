@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- ========================================================
+       BASIC PAGE SETTINGS
+       ======================================================== -->
+
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="{{ page.description | default: site.description }}"
+  >
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} ·
+    {% endif %}
+    {{ site.title }}
+  </title>
+
+
+  <!-- ========================================================
+       STYLESHEET
+
+       ALL visual styling lives here:
+
+       /assets/css/style.css
+
+       This means we can redesign the entire publication
+       without rewriting every page.
+       ======================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/style.css' | relative_url }}"
+  >
+
+
+  <!-- ========================================================
+       FUTURE FAVICON
+
+       We'll add your 3C favicon later.
+
+       Example:
+
+       <link
+         rel="icon"
+         href="{{ '/assets/images/favicon.png' | relative_url }}"
+       >
+
+       Don't add it yet.
+       ======================================================== -->
+
+</head>
+
+
+<body>
+
+
+  <!-- ========================================================
+       SITE HEADER
+       
+       This appears on EVERY page.
+       ======================================================== -->
+
+  <header class="site-header">
+
+
+    <!-- ======================================================
+         BRAND
+
+         Clicking the 3C logo/name always takes you home.
+         ====================================================== -->
+
+    <a
+      class="brand"
+      href="{{ '/' | relative_url }}"
+    >
+
+      <span class="brand-mark">
+        3C
+      </span>
+
+      <span class="brand-name">
+        THE GIRL IN 3C
+      </span>
+
+    </a>
+
+
+    <!-- ======================================================
+         NAVIGATION
+         
+         These links will appear on every page.
+         ====================================================== -->
+
+    <nav
+      class="site-nav"
+      aria-label="Main navigation"
+    >
+
+      <a href="{{ '/' | relative_url }}">
+        Home
+      </a>
+
+      <a href="{{ '/stories/' | relative_url }}">
+        Stories
+      </a>
+
+      <a href="{{ '/about/' | relative_url }}">
+        About
+      </a>
+
+      <a
+        class="nav-subscribe"
+        href="{{ '/subscribe/' | relative_url }}"
+      >
+        Subscribe
+      </a>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- ========================================================
+       MAIN CONTENT
+
+       THIS IS THE IMPORTANT PART.
+
+       Whatever page you're viewing gets inserted here.
+
+       For example:
+
+       index.html
+       ↓
+       {{ content }}
+
+       article
+       ↓
+       {{ content }}
+
+       about.html
+       ↓
+       {{ content }}
+
+       We therefore only need ONE header and ONE footer.
+       ======================================================== -->
+
+  <main>
+
+    {{ content }}
+
+  </main>
+
+
+
+  <!-- ========================================================
+       FOOTER
+
+       This also appears on EVERY page.
+       ======================================================== -->
+
+  <footer class="site-footer">
+
+
+    <!-- ======================================================
+         FOOTER BRAND
+         ====================================================== -->
+
+    <div>
+
+      <p class="brand-name">
+        THE GIRL IN 3C
+      </p>
+
+      <p>
+        New York. Love. Bad decisions.
+        Everything in between.
+      </p>
+
+    </div>
+
+
+    <!-- ======================================================
+         FOOTER LINKS
+         ====================================================== -->
+
+    <div class="footer-links">
+
+      <a href="{{ '/about/' | relative_url }}">
+        About
+      </a>
+
+      <a href="{{ '/subscribe/' | relative_url }}">
+        Subscribe
+      </a>
+
+      <a
+        href="https://www.instagram.com/thegirlin3c/"
+        target="_blank"
+        rel="noopener"
+      >
+        Instagram
+      </a>
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
