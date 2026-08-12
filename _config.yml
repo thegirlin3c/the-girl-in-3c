@@ -1,0 +1,95 @@
+# ============================================================
+# THE GIRL IN 3C — MASTER SITE SETTINGS
+#
+# This file controls information that applies to the
+# entire website.
+#
+# IMPORTANT:
+# Most visual/design changes happen in:
+# assets/css/style.css
+#
+# Most homepage content changes happen in:
+# index.html
+# ============================================================
+
+
+# ============================================================
+# BRAND
+# ============================================================
+
+title: "The Girl in 3C"
+
+description: >
+  She lives in New York. That's all you're getting.
+  Dating, disasters, ambition, friendship, and city life.
+
+author: "The Girl in 3C"
+
+
+# ============================================================
+# GITHUB PAGES
+#
+# Your current website is a PROJECT SITE:
+#
+# thegirlin3C.github.io/the-girl-in-3c
+#
+# Keep this exactly as written unless your repository name
+# changes.
+# ============================================================
+
+url: "https://thegirlin3C.github.io"
+
+baseurl: "/the-girl-in-3c"
+
+
+# ============================================================
+# ARTICLE SETTINGS
+#
+# Every article will automatically use this URL structure:
+#
+# /stories/article-name/
+#
+# Example:
+#
+# /stories/the-post-date-autopsy/
+# ============================================================
+
+permalink: /stories/:title/
+
+
+# ============================================================
+# CONTENT SETTINGS
+# ============================================================
+
+markdown: kramdown
+
+# This tells Jekyll to automatically process posts inside
+# the _posts folder.
+#
+# You will eventually add files like:
+#
+# _posts/
+#   2026-08-20-the-post-date-autopsy.md
+#   2026-08-23-new-york-is-lonely.md
+#   2026-08-27-men-and-their-apartments.md
+#
+# Jekyll will automatically turn them into website pages.
+# ============================================================
+
+
+# ============================================================
+# FUTURE SETTINGS
+#
+# We can add things here later for:
+#
+# - analytics
+# - custom collections
+# - SEO
+# - social sharing
+# - plugins
+# - categories
+# - reader submissions
+#
+# DON'T ADD THOSE YET.
+# Keep the launch version simple.
+# ============================================================
