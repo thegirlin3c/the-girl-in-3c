@@ -46,18 +46,14 @@
 
 
   <!-- ========================================================
-       FUTURE FAVICON
+       FAVICON
 
-       We'll add your 3C favicon later.
+      ======================================================== -->
+  <link
+     rel="icon"
+     href="{{ '/assets/images/favicon.png' | relative_url }}"
+ >
 
-       Example:
-
-       <link
-         rel="icon"
-         href="{{ '/assets/images/favicon.png' | relative_url }}"
-       >
-
-       Don't add it yet.
        ======================================================== -->
 
 </head>
@@ -73,6 +69,59 @@
        ======================================================== -->
 
   <header class="site-header">
+
+   <div class="header-inner">
+
+    <!-- BRAND -->
+
+    <a
+      class="brand"
+      href="{{ '/' | relative_url }}"
+      aria-label="The Girl in 3C — Home"
+    >
+
+      <span class="brand-mark">
+        3C
+      </span>
+
+      <span class="brand-name">
+        THE GIRL IN 3C
+      </span>
+
+    </a>
+
+
+    <!-- NAVIGATION -->
+
+    <nav
+      class="site-nav"
+      aria-label="Main navigation"
+    >
+
+      <a href="{{ '/' | relative_url }}">
+        Home
+      </a>
+
+      <a href="{{ '/stories/' | relative_url }}">
+        Stories
+      </a>
+
+      <a href="{{ '/about/' | relative_url }}">
+        About
+      </a>
+
+      <a
+        class="nav-subscribe"
+        href="{{ '/subscribe/' | relative_url }}"
+      >
+        Subscribe
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
 
 
     <!-- ======================================================
