@@ -150,9 +150,108 @@ h3 {
   background: var(--cream);
 }
 
+* ============================================================
+   HEADER
+   ============================================================ */
 
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.header-inner {
+  width: min(var(--max-width), calc(100% - 40px));
+  min-height: 78px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+
+/* ------------------------------------------------------------
+   BRAND
+   ------------------------------------------------------------ */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  flex-shrink: 0;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+
+  border: 1px solid var(--ink);
+
+  display: grid;
+  place-items: center;
+
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1;
+}
+
+.brand-name {
+  font-size: 11px;
+  line-height: 1;
+
+  letter-spacing: .18em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+
+/* ------------------------------------------------------------
+   5. NAVIGATION
+   ------------------------------------------------------------ */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  gap: 26px;
+
+  font-size: 10px;
+  line-height: 1;
+
+  text-transform: uppercase;
+  letter-spacing: .14em;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 38px;
+
+  transition:
+    color .2s ease,
+    opacity .2s ease;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.nav-subscribe {
+  border: 1px solid var(--ink);
+  padding: 10px 14px;
+}
+
+.nav-subscribe:hover {
+  background: var(--ink);
+  color: var(--white) !important;
+}
 /* =========================================================
-   5. HERO
+   6. HERO
    ========================================================= */
 
 .hero {
@@ -272,7 +371,7 @@ h3 {
 
 
 /* =========================================================
-   6. SECTIONS
+   7. SECTIONS
    ========================================================= */
 
 .section {
@@ -304,7 +403,7 @@ h3 {
 
 
 /* =========================================================
-   7. FEATURED / LATEST STORY
+   8. FEATURED / LATEST STORY
    ========================================================= */
 
 .featured-grid {
@@ -357,7 +456,7 @@ h3 {
 
 
 /* =========================================================
-   8. STORY GRID
+   9. STORY GRID
    ========================================================= */
 
 .story-grid {
@@ -431,7 +530,7 @@ h3 {
 
 
 /* =========================================================
-   9. DISPATCH / EMAIL SECTION
+   10. DISPATCH / EMAIL SECTION
    ========================================================= */
 
 .dispatch {
@@ -474,7 +573,7 @@ h3 {
 
 
 /* =========================================================
-   10. FOOTER
+   11. FOOTER
    ========================================================= */
 
 footer {
@@ -492,7 +591,7 @@ footer {
 
 
 /* =========================================================
-   11. TABLET
+   12. TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
@@ -528,7 +627,7 @@ footer {
 
 
 /* =========================================================
-   12. MOBILE
+   13. MOBILE
    ========================================================= */
 
 @media (max-width: 600px) {
@@ -624,7 +723,7 @@ footer {
 
 
 /* =========================================================
-   13. ACCESSIBILITY / REDUCED MOTION
+   14. ACCESSIBILITY / REDUCED MOTION
    ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
