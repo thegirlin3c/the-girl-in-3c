@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Why Does Everyone Walk so Slowly."
+title: "Why Does Everyone Walk so Slowly?"
 date: 2026-08-12
 category: "New York"
-description: "describe"
+description: "I am a pretty peaceful and calm person (I think) unless there is a complete dumb-dumb ruining my speed walking flow. Sometimes the city feels like it's a person's first day on Earth."
 ---
 
 Probably the most stereotypical gripe about living in the city. The slow walkers. 
