@@ -10,6 +10,8 @@ Probably the most stereotypical gripe about living in the city. The slow walkers
 
 Genuinely, it's not even about being slow. It's the lack of spacial awareness. Like hey we're a group of six, let's take up the entire sidewalk so no one can pass us. Or the swerving. Like if you want to walk slow just pick a freaking lane so I can pass you. And don't even get me started on the escalators, right is to stand left is to walk. Why in the world would you see everyone stand on the right and then choose to stand on the left side?? I fear I am definitely a few tourists 'horror' story of getting yelled at by a 'mean' New Yorker. But babes when I hear my train pulling up and the next one isn't for fifteen minutes you bet I am gonna tell you to move out the way. 
 
+Now I don't want you to think that I am always full speed walking, all the time. I love my leisurely strolls but it's about the time and place, and understanding that although you may have the freedom and time to take a casual walk, the person next to you might very well be late to an important meeting so make it easy for them to pass you.
+
 My siblings say it is such a blessing that I don't drive so I don't get attacked for my road rage. Unfortunately instead I have walking rage, and have in fact almost gotten in a fight once or twice.
 
 My closest fight?
