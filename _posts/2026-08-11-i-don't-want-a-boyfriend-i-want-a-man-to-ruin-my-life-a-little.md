@@ -3,7 +3,7 @@ layout: post
 title: "I Don't Want a Boyfriend. I Want a Man to Ruin My Life a Little."
 date: 2026-08-11
 category: "Dating"
-description: "describe"
+description: "Being young in the city is the best time to be single, but sometimes a girl misses the drama. Is the answer a situationship?"
 ---
 
 I fear as much as I love men, I love my freedom more. I am young and have a career to work on and girls to go on trips with and so many hobbies and passions and corners of the world to explore. Why would I want to lock myself down with a boyfriend who I have to compromise for? Isn't compromising on skipping a night out to work or passing on a new the cutest new pair of shoes so I can invest enough?
