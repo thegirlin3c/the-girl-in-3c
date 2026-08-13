@@ -12,4 +12,4 @@ What I do miss though- the *drama.* There is just something about the game of da
 
 You either get it or you don't. 
 
-- love, the girl in 3C
+-love, the girl in 3C
