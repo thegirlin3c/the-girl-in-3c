@@ -2,19 +2,12 @@
 layout: default
 title: "The Dispatch"
 permalink: /subscribe/
+description: "The Dispatch - a letter from the Girl in 3C."
 ---
 
 <!-- =========================================================
      THE GIRL IN 3C — THE DISPATCH
-
-     This is the future email signup page.
-
-     IMPORTANT:
-     The signup box below is intentionally a placeholder.
-
-     Once the website is established, we'll connect this to
-     your actual email newsletter system.
-     ========================================================= -->
+     =================== -->
 
 
 <section class="page-intro page-intro-narrow">
@@ -25,7 +18,7 @@ permalink: /subscribe/
 
 
   <h1>
-    Get the next story.
+    You probably shouldn't be reading this.
   </h1>
 
 
@@ -43,23 +36,10 @@ permalink: /subscribe/
 
 
   <!-- =======================================================
-       EMAIL SIGNUP PLACEHOLDER
-
-       LATER:
-       Replace this entire div with your email platform's
-       signup form.
-
-       Possible platforms:
-       - Substack
-       - Beehiiv
-       - Kit
-       - Mailchimp
-
-       We'll decide which one makes the most sense before
-       connecting it.
+       EMAIL SIGNUP 
        ======================================================= -->
 
-  <div class="signup-placeholder">
+  <div class="dispatch-signup">
 
     <p class="eyebrow">
       THE MAILBOX
@@ -69,9 +49,43 @@ permalink: /subscribe/
       Your email goes here.
     </h2>
 
-    <p>
-      The actual signup form will be connected here before
-      we launch the publication.
+    <p class="signup-description">
+      I'll see you in your inbox.
+    </p>
+
+    <form
+         action="https://buttondown.com/the_girl_in_3c"
+         method="post"
+         class="three-c-subscribe-form"
+         >
+
+         <label for="email">
+              Email address
+         </label>
+
+         <div class="signup-row">
+              <input
+                   id="email"
+                   type="email"
+                   name="email"
+                   placeholder="you@example.com"
+                   required
+                   >
+              <button type="submit">
+                   Subscribe
+              </button>
+
+         </div>
+
+         <input
+              type="hidden"
+              value="1"
+              name="embed"
+              >
+    </form>
+
+    <p class="signup-note">
+         No spam. No nonsense. Just 3C.
     </p>
 
   </div>
