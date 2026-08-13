@@ -3,7 +3,7 @@ layout: post
 title: "New York Isn't Missing Connection. People Just Need to Take Out the Headphones Sometimes."
 date: 2026-08-12
 category: "New York"
-description: "describe"
+description: "The city is still so alive and ready for connections and belonging, you just have to actively choose to be a part of it."
 ---
 
 People love to talk about the 'old' New York and how it doesn't exist anymore. While maybe it will never be exactly the same as it once was, it is so much more alive than people give credit for. 
