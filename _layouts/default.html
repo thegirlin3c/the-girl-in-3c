@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   <!-- ========================================================
-       BASIC PAGE SETTINGS
+       THE GIRL IN 3C — GLOBAL PAGE SETTINGS
        ======================================================== -->
 
   <meta charset="utf-8">
@@ -29,14 +28,10 @@
 
 
   <!-- ========================================================
-       STYLESHEET
+       MAIN STYLESHEET
 
-       ALL visual styling lives here:
-
+       All visual styling lives in:
        /assets/css/style.css
-
-       This means we can redesign the entire publication
-       without rewriting every page.
        ======================================================== -->
 
   <link
@@ -48,12 +43,15 @@
   <!-- ========================================================
        FAVICON
 
-      ======================================================== -->
-  <link
-     rel="icon"
-     href="{{ '/assets/images/favicon.png' | relative_url }}"
-    >
+       If favicon.png does not exist yet, this simply won't
+       display a favicon. It will not affect the website.
+       ======================================================== -->
 
+  <link
+    rel="icon"
+    type="image/png"
+    href="{{ '/assets/images/favicon.png' | relative_url }}"
+  >
 
 </head>
 
@@ -62,118 +60,64 @@
 
 
   <!-- ========================================================
-       SITE HEADER
-       
-       This appears on EVERY page.
+       HEADER
+
+       This appears ONCE on every page.
        ======================================================== -->
 
   <header class="site-header">
 
-   <div class="header-inner">
-
-    <!-- BRAND -->
-
-    <a
-      class="brand"
-      href="{{ '/' | relative_url }}"
-      aria-label="The Girl in 3C — Home"
-    >
-
-      <span class="brand-mark">
-        3C
-      </span>
-
-      <span class="brand-name">
-        THE GIRL IN 3C
-      </span>
-
-    </a>
+    <div class="header-inner">
 
 
-    <!-- NAVIGATION -->
-
-    <nav
-      class="site-nav"
-      aria-label="Main navigation"
-    >
-
-      <a href="{{ '/' | relative_url }}">
-        Home
-      </a>
-
-      <a href="{{ '/stories/' | relative_url }}">
-        Stories
-      </a>
-
-      <a href="{{ '/about/' | relative_url }}">
-        About
-      </a>
+      <!-- BRAND -->
 
       <a
-        class="nav-subscribe"
-        href="{{ '/subscribe/' | relative_url }}"
+        class="brand"
+        href="{{ '/' | relative_url }}"
+        aria-label="The Girl in 3C — Home"
       >
-        Subscribe
+
+        <span class="brand-mark">
+          3C
+        </span>
+
+        <span class="brand-name">
+          THE GIRL IN 3C
+        </span>
+
       </a>
 
-    </nav>
 
-  </div>
+      <!-- NAVIGATION -->
 
-
-    <!-- ======================================================
-         BRAND
-
-         Clicking the 3C logo/name always takes you home.
-         ====================================================== -->
-
-    <a
-      class="brand"
-      href="{{ '/' | relative_url }}"
-    >
-
-      <span class="brand-mark">
-        3C
-      </span>
-
-      <span class="brand-name">
-        THE GIRL IN 3C
-      </span>
-
-    </a>
-
-
-    <!-- ======================================================
-         NAVIGATION
-         
-         These links will appear on every page.
-         ====================================================== -->
-
-    <nav
-      class="site-nav"
-      aria-label="Main navigation"
-    >
-
-      <a href="{{ '/' | relative_url }}">
-        Home
-      </a>
-
-      <a href="{{ '/stories/' | relative_url }}">
-        Stories
-      </a>
-
-      <a href="{{ '/about/' | relative_url }}">
-        About
-      </a>
-
-      <a
-        class="nav-subscribe"
-        href="{{ '/subscribe/' | relative_url }}"
+      <nav
+        class="site-nav"
+        aria-label="Main navigation"
       >
-        Subscribe
-      </a>
 
-    </nav>
+        <a href="{{ '/' | relative_url }}">
+          Home
+        </a>
+
+        <a href="{{ '/stories/' | relative_url }}">
+          Stories
+        </a>
+
+        <a href="{{ '/about/' | relative_url }}">
+          About
+        </a>
+
+        <a
+          class="nav-subscribe"
+          href="{{ '/subscribe/' | relative_url }}"
+        >
+          Subscribe
+        </a>
+
+      </nav>
+
+    </div>
 
   </header>
 
@@ -182,25 +126,12 @@
   <!-- ========================================================
        MAIN CONTENT
 
-       THIS IS THE IMPORTANT PART.
+       Jekyll inserts the current page here.
 
-       Whatever page you're viewing gets inserted here.
-
-       For example:
-
-       index.html
-       ↓
-       {{ content }}
-
-       article
-       ↓
-       {{ content }}
-
-       about.html
-       ↓
-       {{ content }}
-
-       We therefore only need ONE header and ONE footer.
+       Homepage → index.html
+       About → pages/about.html
+       Stories → pages/stories.html
+       Article → _posts/*.md
        ======================================================== -->
 
   <main>
@@ -214,17 +145,12 @@
   <!-- ========================================================
        FOOTER
 
-       This also appears on EVERY page.
+       This appears ONCE on every page.
        ======================================================== -->
 
   <footer class="site-footer">
 
-
-    <!-- ======================================================
-         FOOTER BRAND
-         ====================================================== -->
-
-    <div>
+    <div class="footer-brand">
 
       <p class="brand-name">
         THE GIRL IN 3C
@@ -237,10 +163,6 @@
 
     </div>
 
-
-    <!-- ======================================================
-         FOOTER LINKS
-         ====================================================== -->
 
     <div class="footer-links">
 
@@ -255,7 +177,7 @@
       <a
         href="https://www.instagram.com/thegirlin3c/"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
       >
         Instagram
       </a>
@@ -266,5 +188,7 @@
 
 
 </body>
+
+</html>
 
 </html>
