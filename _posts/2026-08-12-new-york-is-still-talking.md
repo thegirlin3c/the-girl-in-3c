@@ -3,7 +3,7 @@ layout: post
 title: New York Is Still Talking
 date: 2026-08-12
 category: New York
-description: “Maybe New York isn’t missing connection. Maybe we’re just too busy blocking it out.”
+description: Maybe New York isn’t missing connection. Maybe we’re just too busy blocking it out.
 ---
 
 People love to talk about the “old” New York.
